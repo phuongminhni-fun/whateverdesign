@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;WHATEVERDESIGN — Branding &amp; Social Post Studio&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Tailwind CSS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Google Fonts: Syne (Display), Inter (Body), JetBrains Mono (Technical Tags) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg-white: #FFFFFF;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--neon-lime: #D8F800;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--hot-pink: #FF1E8E;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--ink-black: #111111;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--font-display: 'Syne', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--font-body: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--font-mono: 'JetBrains Mono', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>* { box-sizing: border-box; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--neon-lime);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--ink-black);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: var(--font-body);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (min-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>body { padding: 24px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.font-display { font-family: var(--font-display); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.font-mono-tech { font-family: var(--font-mono); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.canvas-frame {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1280px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg-white);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid var(--ink-black);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 10px 10px 0px rgba(17, 17, 17, 0.16);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.brutal-shadow {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 4px 4px 0px var(--ink-black);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.18s ease, box-shadow 0.18s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.brutal-shadow:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translate(-2px, -2px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 6px 6px 0px var(--ink-black);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 5px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-item.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--neon-lime);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1.5px solid var(--ink-black);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-item:not(.active):hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--hot-pink);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Ẩn hiện các trang */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.page-view {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.page-view.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeIn 0.25s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>from { opacity: 0; transform: translateY(6px); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to { opacity: 1; transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.wire-shape-1 { border: 2px solid #68C800; border-radius: 18px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.wire-shape-2 { border: 2px solid #FF8A00; border-radius: 44px 44px 0 0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.wire-shape-3 { border: 2px solid #FF1E8E; border-radius: 0px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.wire-shape-4 { border: 2px solid #2E3192; border-radius: 12px 12px 38px 12px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.marquee-container { overflow: hidden; white-space: nowrap; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.marquee-content { display: inline-block; animation: marquee 24s linear infinite; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes marquee {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>0% { transform: translateX(0); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>100% { transform: translateX(-50%); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="canvas-frame"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- TOP NAVIGATION HEADER --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;header class="sticky top-0 z-30 bg-white border-b-2 border-[#111111] px-4 md:px-8 py-3.5 flex flex-wrap items-center justify-between gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav class="flex items-center gap-1 sm:gap-2 font-mono-tech text-[11px] sm:text-xs uppercase tracking-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchPage('home')" data-page="home" class="nav-item active cursor-pointer"&gt;[01] Home&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchPage('branding')" data-page="branding" class="nav-item cursor-pointer"&gt;[02] Branding&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchPage('social')" data-page="social" class="nav-item cursor-pointer"&gt;[03] Social Post&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchPage('team')" data-page="team" class="nav-item cursor-pointer"&gt;[04] Team &amp; Contact&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="switchPage('home')" class="font-display font-extrabold text-center leading-none text-xs sm:text-sm tracking-tighter cursor-pointer hover:text-[#FF1E8E]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>WHATEVER&lt;br&gt;DESIGN</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hidden md:flex items-center gap-3 font-mono-tech text-[11px]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="text-neutral-500"&gt;[SAIGON — VN]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchPage('team', true)" class="bg-[#FF1E8E] text-white border border-[#111111] px-3 py-1.5 font-bold uppercase brutal-shadow cursor-pointer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>START BRIEF [+]</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- ==========================================</p>
+<p class="p1"><span class="Apple-converted-space">             </span>PAGE 1: HOMEPAGE</p>
+<p class="p1"><span class="Apple-converted-space">        </span>=========================================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="page-home" class="page-view active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;section class="px-5 md:px-9 pt-6 pb-14"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="font-display font-extrabold text-[#FF1E8E] text-center uppercase leading-[0.88] tracking-tighter text-[clamp(2.2rem,7.6vw,6.4rem)] select-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>WHATEVERDESIGN</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-wrap justify-between items-center gap-2 mt-4 mb-8 font-mono-tech text-[10px] sm:text-[11px] text-neutral-600 border-y border-dashed border-neutral-300 py-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;[brand identity]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;[social media]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;[art direction]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;[fashion editorial]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;[key visual]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;[campaign 2026]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-7 items-end"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Card 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="group relative cursor-pointer" onclick="openModal('noir')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="border border-[#111111] overflow-hidden bg-neutral-100 relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&amp;fit=crop&amp;w=800&amp;q=85" class="w-full h-[380px] object-cover group-hover:scale-105 transition-transform duration-500" alt="Noir"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="absolute top-2.5 left-2.5 bg-white border border-[#111111] px-2 py-0.5 font-mono-tech text-[10px] font-bold"&gt;FIG 01&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="md:absolute md:bottom-5 md:-right-4 mt-3 bg-white border border-[#111111] p-3 max-w-[220px] brutal-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="font-mono-tech text-[10px] font-bold text-[#FF1E8E] mb-0.5"&gt;[FASHION BRANDING]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-[11px]"&gt;&lt;strong&gt;NOIR ATELIER:&lt;/strong&gt; Định hình nhận diện thời trang đương đại.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Card 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="group relative cursor-pointer" onclick="switchPage('social')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="md:absolute md:top-5 md:-left-4 mb-3 bg-[#D8F800] border border-[#111111] p-3 max-w-[220px] brutal-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="font-mono-tech text-[10px] font-bold mb-0.5"&gt;[SOCIAL CAMPAIGN]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-[11px]"&gt;&lt;strong&gt;CYBER DROP:&lt;/strong&gt; Hệ thống lưới Instagram 3x3 đạt 1.8M reach.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="border border-[#111111] overflow-hidden bg-neutral-100 relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=800&amp;q=85" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500" alt="Cyber"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="absolute bottom-2.5 right-2.5 bg-[#111] text-[#D8F800] px-2.5 py-1 font-mono-tech text-[10px]"&gt;XEM SOCIAL GRID →&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Card 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="group relative cursor-pointer" onclick="openModal('acid')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="border border-[#111111] overflow-hidden bg-neutral-100 relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=800&amp;q=85" class="w-full h-[380px] object-cover group-hover:scale-105 transition-transform duration-500" alt="Acid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="absolute top-2.5 right-2.5 bg-white border border-[#111111] px-2 py-0.5 font-mono-tech text-[10px] font-bold"&gt;FIG 03&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="md:absolute md:bottom-8 md:-left-4 mt-3 bg-white border border-[#111111] p-3 max-w-[220px] brutal-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="font-mono-tech text-[10px] font-bold text-[#2E3192] mb-0.5"&gt;[PACKAGING]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-[11px]"&gt;&lt;strong&gt;ACID STUDIO:&lt;/strong&gt; Hệ thống nhãn mác &amp; bao bì giới hạn.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Manifesto Split Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;section class="grid grid-cols-1 md:grid-cols-2 border-y-2 border-[#111111]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="relative min-h-[400px] bg-neutral-900 flex items-center justify-center border-b-2 md:border-b-0 md:border-r-2 border-[#111111]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=950&amp;q=85" class="w-full h-full object-cover" alt="Editorial"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button onclick="switchPage('branding')" class="absolute z-10 bg-[#D8F800] hover:bg-[#FF1E8E] hover:text-white text-[#111111] border-2 border-[#111111] px-6 py-4 font-mono-tech text-xs font-bold uppercase brutal-shadow cursor-pointer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>KHÁM PHÁ DỰ ÁN BRANDING →</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-[#D8F800] p-8 md:p-12 flex flex-col justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="font-mono-tech text-[11px] uppercase"&gt;[agency manifesto]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h2 class="font-display font-extrabold text-3xl sm:text-4xl text-[#FF1E8E] uppercase tracking-tight my-3"&gt;STREET-EDITORIAL&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-xs sm:text-sm leading-relaxed font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;strong&gt;WHATEVERDESIGN&lt;/strong&gt; kết hợp tư duy định vị thương hiệu sắc sảo với thẩm mỹ thời trang đường phố đương đại — biến mọi bộ nhận diện thành điểm chạm thị giác không thể rời mắt.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="pt-6 border-t border-[#111111]/30 flex items-center justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="font-mono-tech text-xs font-bold"&gt;[BRAND &amp; SOCIAL POD]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button onclick="switchPage('social')" class="font-mono-tech text-xs font-bold underline hover:text-[#FF1E8E] cursor-pointer"&gt;Xem Social Post Showcase →&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Advantages --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;section class="px-5 md:px-9 py-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-between items-end mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-mono-tech text-xs text-neutral-500"&gt;[our strengths]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="font-display font-extrabold text-3xl uppercase"&gt;ADVANTAGES&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="wire-shape-1 p-6 bg-white h-[220px] flex flex-col justify-center items-center text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="font-mono-tech text-xs font-bold text-[#529c00] mb-2"&gt;[01]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-display font-bold text-sm uppercase mb-1"&gt;Bản Sắc Độc Bản&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-[11px] text-neutral-700"&gt;DNA thị giác riêng biệt, không trùng lặp.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="wire-shape-2 p-6 bg-white h-[260px] flex flex-col justify-center items-center text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="font-mono-tech text-xs font-bold text-[#FF8A00] mb-2"&gt;[02]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-display font-bold text-sm uppercase mb-1"&gt;Social-First&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-[11px] text-neutral-700"&gt;Tối ưu điểm dừng mắt cho Instagram &amp; Reels.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="wire-shape-3 p-6 bg-white h-[235px] flex flex-col justify-center items-center text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="font-mono-tech text-xs font-bold text-[#FF1E8E] mb-2"&gt;[03]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-display font-bold text-sm uppercase mb-1"&gt;Fashion Direction&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-[11px] text-neutral-700"&gt;Chỉ đạo nghệ thuật lookbook &amp; key visual.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="wire-shape-4 p-6 bg-white h-[270px] flex flex-col justify-center items-center text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="font-mono-tech text-xs font-bold text-[#2E3192] mb-2"&gt;[04]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-display font-bold text-sm uppercase mb-1"&gt;Tốc Độ &amp; Linh Hoạt&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-[11px] text-neutral-700"&gt;Bắt trend nhanh, bàn giao đúng hạn.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- ==========================================</p>
+<p class="p1"><span class="Apple-converted-space">             </span>PAGE 2: BRANDING PAGE</p>
+<p class="p1"><span class="Apple-converted-space">        </span>=========================================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="page-branding" class="page-view"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-[#D8F800] border-b-2 border-[#111111] px-5 md:px-9 py-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="font-mono-tech text-xs uppercase font-bold"&gt;[WHATEVERDESIGN ARCHIVE]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="font-display font-extrabold text-4xl sm:text-6xl uppercase tracking-tight mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>BRANDING &lt;span class="text-[#FF1E8E]"&gt;WORKS&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-xs sm:text-sm max-w-2xl mt-3 font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Tuyển tập các dự án nhận diện thương hiệu, bao bì sản phẩm và art direction lookbook thời trang.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="p-5 md:p-9 grid grid-cols-1 md:grid-cols-2 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Branding Card 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="border-2 border-[#111111] bg-white brutal-shadow cursor-pointer" onclick="openModal('noir')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="px-4 py-2 border-b border-[#111111] flex justify-between font-mono-tech text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[#FF1E8E] font-bold"&gt;[VISUAL IDENTITY]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;2026&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&amp;fit=crop&amp;w=900&amp;q=85" class="w-full h-72 object-cover border-b border-[#111]" alt="Noir"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h2 class="font-display font-extrabold text-2xl uppercase mb-2"&gt;NOIR ATELIER FW26&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-xs text-neutral-700"&gt;Hệ thống nhận diện thương hiệu thời trang đương đại &amp; lookbook editorial.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Branding Card 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="border-2 border-[#111111] bg-white brutal-shadow cursor-pointer" onclick="openModal('acid')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="px-4 py-2 border-b border-[#111111] flex justify-between font-mono-tech text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[#FF1E8E] font-bold"&gt;[PACKAGING &amp; MERCH]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;2026&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=900&amp;q=85" class="w-full h-72 object-cover border-b border-[#111]" alt="Acid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="p-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h2 class="font-display font-extrabold text-2xl uppercase mb-2"&gt;ACID STUDIO CAPSULE&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-xs text-neutral-700"&gt;Thiết kế bao bì túi phản quang, hộp giới hạn và sticker pack Y2K.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- ==========================================</p>
+<p class="p1"><span class="Apple-converted-space">             </span>PAGE 3: SOCIAL POST PAGE</p>
+<p class="p1"><span class="Apple-converted-space">        </span>=========================================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="page-social" class="page-view"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="px-5 md:px-9 py-10 border-b-2 border-[#111111] bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="font-mono-tech text-xs text-[#FF1E8E] font-bold"&gt;[INSTAGRAM GRIDS &amp; REELS COVERS]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="font-display font-extrabold text-4xl sm:text-6xl uppercase tracking-tight mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>SOCIAL &lt;span class="bg-[#D8F800] px-2 border border-[#111111]"&gt;POSTS&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-xs sm:text-sm max-w-2xl mt-3 text-neutral-700"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Hệ sinh thái thị giác Social Media đồng bộ theo chiến dịch tháng, tối ưu tỷ lệ lưu và chia sẻ.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Simulated 3x3 Grid --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="p-5 md:p-9 grid grid-cols-1 lg:grid-cols-12 gap-8 bg-neutral-50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-4 bg-[#D8F800] border-2 border-[#111111] p-6 brutal-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="font-mono-tech text-xs font-bold uppercase mb-2"&gt;[ACTIVE CAMPAIGN]&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-display font-extrabold text-2xl uppercase mb-3"&gt;CYBER STREET DROP&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs leading-relaxed mb-4"&gt;Chiến dịch ra mắt bộ sưu tập với bố cục lưới 3x3 tương phản cao, đạt +380% tương tác tự nhiên.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-white border border-[#111] p-3 font-mono-tech text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;&lt;strong&gt;REACH:&lt;/strong&gt; 1.8M Organic&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;&lt;strong&gt;SAVE RATE:&lt;/strong&gt; +340%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-8 bg-white border-2 border-[#111111] p-5 brutal-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center justify-between pb-3 mb-3 border-b border-neutral-200 font-mono-tech text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span&gt;@whateverdesign.vn&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[#FF1E8E] font-bold"&gt;[3x3 GRID SIMULATOR]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- 9 Grid Items --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="grid grid-cols-3 gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-square bg-neutral-200 border border-[#111] overflow-hidden"&gt;&lt;img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-full h-full object-cover" alt="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-square bg-neutral-200 border border-[#111] overflow-hidden"&gt;&lt;img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-full h-full object-cover" alt="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-square bg-neutral-200 border border-[#111] overflow-hidden"&gt;&lt;img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-full h-full object-cover" alt="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-square bg-neutral-200 border border-[#111] overflow-hidden"&gt;&lt;img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-full h-full object-cover" alt="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-square bg-neutral-200 border border-[#111] overflow-hidden"&gt;&lt;img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-full h-full object-cover" alt="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-square bg-neutral-200 border border-[#111] overflow-hidden"&gt;&lt;img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-full h-full object-cover" alt="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-square bg-neutral-200 border border-[#111] overflow-hidden"&gt;&lt;img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-full h-full object-cover" alt="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-square bg-neutral-200 border border-[#111] overflow-hidden"&gt;&lt;img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-full h-full object-cover" alt="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="aspect-square bg-neutral-200 border border-[#111] overflow-hidden"&gt;&lt;img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=300&amp;q=80" class="w-full h-full object-cover" alt="grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- ==========================================</p>
+<p class="p1"><span class="Apple-converted-space">             </span>PAGE 4: OUR TEAM &amp; CONTACT PAGE</p>
+<p class="p1"><span class="Apple-converted-space">        </span>=========================================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="page-team" class="page-view"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-[#D8F800] px-5 md:px-9 py-12 border-b-2 border-[#111111]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="font-mono-tech text-xs font-bold uppercase"&gt;[MEET THE SQUAD // SAIGON]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="font-display font-extrabold text-4xl sm:text-6xl uppercase tracking-tight mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>OUR &lt;span class="text-[#FF1E8E]"&gt;CREATORS&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-white border-2 border-[#111111] p-3 brutal-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=600&amp;q=85" class="w-full h-56 object-cover border border-[#111] mb-2" alt="Nam"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-display font-bold text-lg"&gt;HOÀNG NAM&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-xs font-mono-tech text-neutral-600"&gt;[FOUNDER / CREATIVE DIRECTOR]&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-white border-2 border-[#111111] p-3 brutal-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=600&amp;q=85" class="w-full h-56 object-cover border border-[#111] mb-2" alt="Minh Anh"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-display font-bold text-lg"&gt;MINH ANH&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-xs font-mono-tech text-neutral-600"&gt;[BRAND &amp; VISUAL LEAD]&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-white border-2 border-[#111111] p-3 brutal-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=600&amp;q=85" class="w-full h-56 object-cover border border-[#111] mb-2" alt="Linh Chi"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-display font-bold text-lg"&gt;LINH CHI&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-xs font-mono-tech text-neutral-600"&gt;[SOCIAL CONTENT STRATEGIST]&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Contact Form --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="contact-section" class="p-5 md:px-9 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-mono-tech text-xs text-[#FF1E8E] font-bold"&gt;[START A PROJECT]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="font-display font-extrabold text-3xl uppercase mt-1 mb-3"&gt;LET'S MAKE NOISE TOGETHER&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-neutral-700 leading-relaxed mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Gửi brief nhanh cho &lt;strong&gt;WHATEVERDESIGN&lt;/strong&gt; để nhận tư vấn hướng đi và báo giá trong vòng 24 giờ.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="font-mono-tech text-xs space-y-2 border-t border-[#111] pt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;&lt;strong&gt;STUDIO:&lt;/strong&gt; Quận 1, TP. Hồ Chí Minh&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;&lt;strong&gt;EMAIL:&lt;/strong&gt; hello@whateverdesign.vn&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-7"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;form onsubmit="handleForm(event)" class="border-2 border-[#111111] p-6 bg-neutral-50 brutal-shadow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="font-mono-tech text-xs font-bold uppercase mb-4 pb-2 border-b border-[#111]"&gt;BRIEF BUILDER&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-3 text-xs mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label class="block font-bold"&gt;Tên thương hiệu / Của bạn *&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;input type="text" required placeholder="VD: Noir Studio" class="w-full border border-[#111] p-2 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label class="block font-bold"&gt;Email hoặc Zalo liên hệ *&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;input type="text" required placeholder="VD: 0909xxxxxx" class="w-full border border-[#111] p-2 bg-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button type="submit" class="w-full bg-[#FF1E8E] text-white border-2 border-[#111] py-3 font-display font-bold uppercase brutal-shadow cursor-pointer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>GỬI BRIEF CHO WHATEVERDESIGN →</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div id="success-msg" class="hidden mt-3 p-3 bg-[#D8F800] border border-[#111] text-xs font-bold"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>✓ ĐÃ GỬI THÀNH CÔNG! TEAM SẼ LIÊN HỆ LẠI SỚM.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- FOOTER --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;footer class="bg-white px-5 md:px-9 py-6 border-t-2 border-[#111] flex justify-between items-center font-mono-tech text-[11px]"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;© 2026 WHATEVERDESIGN STUDIO.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;HELLO@WHATEVERDESIGN.VN&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- MODAL POPUP --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="project-modal" class="fixed inset-0 z-50 hidden bg-black/70 flex items-center justify-center p-4" onclick="closeModal(event)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white border-2 border-[#111] max-w-lg w-full p-6 brutal-shadow relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="document.getElementById('project-modal').classList.add('hidden')" class="absolute top-3 right-3 bg-[#111] text-white px-2 py-1 font-mono-tech text-xs"&gt;✕&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="modal-content"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Điều hướng SPA giữa 4 trang</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function switchPage(pageId, scrollToContact = false) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.page-view').forEach(p =&gt; p.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('page-' + pageId).classList.add('active');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.nav-item').forEach(btn =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (btn.getAttribute('data-page') === pageId) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (scrollToContact &amp;&amp; pageId === 'team') {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}, 80);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>window.scrollTo({ top: 0, behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Popup Modal chi tiết dự án</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function openModal(type) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const modal = document.getElementById('project-modal');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const content = document.getElementById('modal-content');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (type === 'noir') {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>content.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-mono-tech text-xs text-[#FF1E8E] font-bold"&gt;[VISUAL IDENTITY]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-display font-extrabold text-2xl uppercase mt-1 mb-2"&gt;NOIR ATELIER FW26&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-neutral-700 mb-4"&gt;Hệ thống nhận diện thương hiệu thời trang đương đại, bao gồm thiết kế nhãn mác, bao bì và chỉ đạo nghệ thuật lookbook.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-[#D8F800] border border-[#111] p-3 font-mono-tech text-xs"&gt;Kết quả: +190% nhận diện thương hiệu thời trang.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>content.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-mono-tech text-xs text-[#2E3192] font-bold"&gt;[PACKAGING &amp; MERCH]&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-display font-extrabold text-2xl uppercase mt-1 mb-2"&gt;ACID STUDIO CAPSULE&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-xs text-neutral-700 mb-4"&gt;Thiết kế hộp giày phiên bản giới hạn, túi zip phản quang và bộ sticker Y2K cho dòng sản phẩm streetwear.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-[#D8F800] border border-[#111] p-3 font-mono-tech text-xs"&gt;Kết quả: Sold-out 1.200 sản phẩm trong 36 giờ.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>modal.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function closeModal(e) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (e.target.id === 'project-modal') {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('project-modal').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function handleForm(e) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>e.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('success-msg').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>e.target.reset();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
